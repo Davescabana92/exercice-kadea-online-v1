@@ -9,31 +9,74 @@
   list-style: none;
 }
 
-header {
-  width: 100%;
+.header {
   display: flex;
   justify-content: space-between;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
- nav ul {
+ .header__nav ul {
   display: flex;
-  gap: 45px;
+  gap: 1.5rem;
   
  }
+
+ .nav__list a{
+  color: #000000;
+  font-weight: 600;
+ }
+
+ .nav__list a:hover{
+  color: #D92950;
+  font-weight: 600;
+ }
+/*end header*/
+/*begin hero_section*/
+
 
  .hero__section {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 100px;
+  max-width: 85%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.5rem;
  }
 
- .hero__section-text {
+ .hero__content {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
-  width: 50%;
+  gap: 1.5rem;
+  /*max-width: 50%;*/
  }
+ .hero__content__title h1{
+  font-weight: 600;
+  font-size: 2.2rem;
+  max-width: 60%;
+
+
+ }
+
+ .hero__content-description p{
+  max-width: 60%;
+  text-align: start;
+ }
+
+ .btn__primary{
+  width: 11.5rem;
+  background-color: #D92950;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 600;
+ }
+
+ /*.hero__section-img img{
+  max-width: 100%;
+  height: auto;
+ }*/
 
  .hero__section button{
   padding: 10px 20px;
