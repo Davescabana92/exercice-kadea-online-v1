@@ -5,4 +5,166 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
+  text-decoration: none;
+  list-style: none;
 }
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+ nav ul {
+  display: flex;
+  gap: 45px;
+  
+ }
+
+ .hero__section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 100px;
+ }
+
+ .hero__section-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+ }
+
+ .hero__section button{
+  padding: 10px 20px;
+  background-color: #D92950;
+  color: #FFFFFF;
+  border: none;
+ }
+ 
+ .option__section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FAF3E9;
+  gap: 30px;
+  padding: 100px 100px;
+ }
+
+ .option__section article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: black solid 1px;
+  border-radius: 5%;
+  gap: 5px;
+  width: 20%;
+  align-items: center;
+  text-align: center;
+  padding: 10px 30px;
+ }
+
+ .start__coding__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  background-color: #282C34;
+ }
+
+ .start__coding__section-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  color: white;
+ }
+
+ .start__coding__section button{
+  padding: 10px 20px;
+  background-color: #D92950;
+  color: #FFFFFF;
+  border: none;
+ }
+
+ .learning__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 100px;
+ }
+
+ .learning__section__course{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+ }
+
+ .learning__section div h2{
+  text-align: center;
+ }
+
+ .learning__section__course article{
+  display: flex;
+  justify-content: space-around;
+  border: #FAF3E9 solid 1px;
+  background-color: #FAF3E9;
+  width: 25%;
+  height: 100px;
+  font-size: 15px;
+  align-items: center;
+ }
+
+ .learning__section div p a{
+  color: #D92950;
+ }
+
+ .contact__us__section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FAF3E9;
+  padding: 100px 100px;
+  gap: 30px;
+ }
+
+ .contact__us__section div h2{
+  text-align: center;
+ }
+
+ .contact__us__section form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ }
+ .contact__us__section-information{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+ }
+
+ .contact__us__section button {
+  padding: 10px 20px;
+  background-color: #D92950;
+  color: #FFFFFF;
+  border: none;
+ }
+
+ footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+  gap: 30px;
+ }
+
+ footer div p{
+  text-align: center;
+ }
+
+ .social__media{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+ }
