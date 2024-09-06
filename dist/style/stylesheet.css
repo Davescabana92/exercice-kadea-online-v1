@@ -549,8 +549,29 @@
     height: 2.5rem;
    }
 
+   /*media query for course.html */
 
- }
+  
+   .learning__section__article_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+   }
+
+   .hero__section-course-content{
+    max-width: 100%;
+    align-items: center;
+   }
+   .hero__section-course-description p{
+    text-align: center;
+   }
+
+   .learning__section-course-description p{
+    max-width: 100%;
+    text-align: center;
+   }
+
+    }
 
  @media only screen and (max-width: 599px) {
 
@@ -565,6 +586,32 @@
    .menu__humburger__image{
     width: 3rem;
     height: 3rem;
+   }
+
+   .header__nav__list2{
+    height: 7rem;
+    width: 50%;
+    background: black;
+    list-style-type: none;
+    padding: 1rem;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 2rem;
+    opacity: 75%;
+    display: none;
+   }
+
+   .header__nav__list2 .nav__list a{
+    color: #FFFFFF;
+   }
+
+   .menu__humburger:hover .header__nav__list2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
    }
 
   .hero__content{
@@ -676,6 +723,36 @@
    .contact__us__indentification__email-input input{
     width: 100%;
     height: 2.5rem;
+   }
+
+   /*media query for course.html */
+
+  
+   .learning__section__article_content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  
+   }
+
+   .hero__section-course-content{
+    max-width: 100%;
+    align-items: center;
+   }
+
+   .hero__section-course-title h1{
+    text-align: center;
+    font-size: 1.5rem;
+   }
+
+
+   .hero__section-course-description p{
+    text-align: center;
+   }
+
+   .learning__section-course-description p{
+    max-width: 100%;
+    text-align: center;
    }
 
 
