@@ -31,6 +31,10 @@
   color: #D92950;
   font-weight: 600;
  }
+
+ .menu__humburger{
+  display: none;
+ }
 /*end header*/
 /*begin hero_section*/
 
@@ -49,6 +53,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 1.5rem;
+  max-width: 50%;
 
  }
 
@@ -75,6 +80,9 @@
  }
 
  .hero__image{
+  max-width: 50%;
+ }
+ .hero__image-img{
   max-width: 100%;
   height: auto;
  }
@@ -140,8 +148,8 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 30px;
-  max-width: 100%;
+  gap: 2rem;
+  max-width: 50%;
   color: white;
  }
 
@@ -159,6 +167,10 @@
  }
 
  .start__coding__image{
+  max-width: 50%;
+ }
+
+ .start__coding__image-img{
   max-width: 100%;
   height: auto;
  }
@@ -234,14 +246,17 @@
   gap: 3rem;
  }
  .contact__us__identification{
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 2.5rem;
+
  }
 
  .contact__us__identification__name{
-  max-width: 100%;
+  width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 1rem;
  }
@@ -252,11 +267,11 @@
  }
 
  .contact__us__identification__name-input{
-  max-width: 100%;
+  width: 100%;
  }
 
  .contact__us__identification__name-input input{
-  width: 30rem;
+  width: 100%;
   height: 2.8rem;
   background-color: #FAF3E9;
   border: 1px solid rgb(28, 27, 27);
@@ -266,7 +281,7 @@
  }
 
  .contact__us__identification__email{
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -278,11 +293,11 @@
  }
 
  .contact__us__indentification__email-input{
-  max-width: 100%;
+  width: 100%;
  }
 
  .contact__us__indentification__email-input input{
-  width: 30rem;
+  width: 100%;
   height: 2.8rem;
   background-color: #FAF3E9;
   border: 1px solid rgb(28, 27, 27);
@@ -358,10 +373,11 @@
 
  /*start media query for tablet*/
 
- @media (min-width: 600px) and (max-width: 800px) {
+ @media (min-width: 600px) and (max-width: 900px) {
 
   .hero__content{
     align-items: center;
+    max-width: 100%;
   }
   .hero__image{
     display: none;
@@ -408,6 +424,7 @@
    }
    .start__coding__section__content{
     align-items: center;
+    max-width: 100%;
    }
    .start__coding__image{
     display: none;
@@ -438,6 +455,154 @@
    .learning__section__article{
     width: 70%;
     height: 7rem;
+   }
+
+   .contact__us__btn{
+    justify-content: center;
+   }
+
+   .contact__us__identification{
+    flex-direction: column;
+    gap: 2rem;
+   }
+
+   .contact__us__identification__name-input input{
+    width: 100%;
+    height: 2.5rem;
+   }
+
+   .contact__us__indentification__email-input input{
+    width: 100%;
+    height: 2.5rem;
+   }
+
+
+ }
+
+ @media only screen and (max-width: 599px) {
+
+  .header__nav ul{
+    display: none;
+  }
+
+  .menu__humburger{
+    display: block;
+   }
+
+   .menu__humburger__image{
+    width: 3rem;
+    height: 3rem;
+   }
+
+  .hero__content{
+    align-items: center;
+    max-width: 100%;
+  }
+  .hero__image{
+    display: none;
+   }
+
+   .hero__content__title h1{
+    text-align: center;
+   }
+   .hero__content-description p{
+    text-align: center;
+   }
+
+   /*end of hero__section*/
+
+   .option__section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 6rem 2rem;
+   }
+
+   .option__article {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 75%;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0.8rem;
+   }
+
+   
+   /*start of start__coding__section*/
+
+   .start__coding__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+   }
+   .start__coding__section__content{
+    align-items: center;
+    max-width: 100%;
+   }
+   .start__coding__image{
+    display: none;
+   }
+
+   .start__coding__section__title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .start__coding__section__title h2{
+    max-width: 100%;
+   }
+
+   .start__coding__section__description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+   }
+
+   .start__coding__section__description p{
+    max-width: 100%;
+   }
+
+   /*end of start__coding__section*/
+
+   /*start of learning__section*/
+
+   .learning__section__content{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+   }
+
+   .learning__section__article{
+    width: 70%;
+    height: 7rem;
+   }
+
+   .contact__us__btn{
+    justify-content: center;
+   }
+
+   .contact__us__identification{
+    flex-direction: column;
+    gap: 2rem;
+   }
+
+   .contact__us__identification__name-input input{
+    width: 100%;
+    height: 2.5rem;
+   }
+
+   .contact__us__indentification__email-input input{
+    width: 100%;
+    height: 2.5rem;
    }
 
 
