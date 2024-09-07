@@ -620,6 +620,10 @@
 
  @media only screen and (max-width: 599px) {
 
+  .header {
+    max-width: 100%;
+  }
+  
   .header__nav ul{
     display: none;
   }
@@ -659,6 +663,11 @@
     align-items: center;
    }
 
+   .hero__section{
+    max-width: 100%;
+    padding: 4rem 2rem;
+   }
+
   .hero__content{
     align-items: center;
     max-width: 100%;
@@ -685,16 +694,16 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
    }
 
    .option__article {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     gap: 1rem;
     align-items: center;
     text-align: center;
@@ -708,7 +717,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80%;
+    max-width: 100%;
+    padding: 4rem 2rem 3rem 2rem;
    }
    .start__coding__section__content{
     align-items: center;
@@ -745,6 +755,8 @@
 
    .learning__section{
     align-items: center;
+    max-width: 100%;
+    padding: 4rem 2rem;
    }
 
    .learning__section__content{
@@ -754,12 +766,17 @@
    }
 
    .learning__section__article{
-    width: 100%;
+    width: 85%;
     height: 7rem;
    }
 
    .learning__section__article h3{
     font-size: 1.2rem;
+   }
+
+   .contact__us__section{
+    max-width: 100%;
+    padding: 4rem 2rem;
    }
 
    .contact__us__btn{
@@ -781,8 +798,18 @@
     height: 2.5rem;
    }
 
+   .footer{
+    max-width: 100%;
+    padding: 4rem 2rem;
+   }
+
    /*media query for course.html */
 
+   .hero__section-course{
+    max-width: 100%;
+    padding: 4rem 2rem;
+   }
+   
    .hero__section-course-content{
     max-width: 100%;
     align-items: center;
@@ -802,12 +829,16 @@
    
    .learning__section-course{
     align-items: center;
+    max-width: 100%;
+    padding: 4rem 2rem;
    }
 
    .learning__section__article_content{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     gap: 1rem;
+    align-items: center;
   
    }
 
@@ -818,6 +849,15 @@
 
    .learning__section-course-navigation{
     gap: 1rem;
+   }
+
+   .learning__section__article-course{
+    width: 85%;
+   }
+
+   .learning__section__article-course h3{
+    font-size: 1.1rem;
+    font-weight: 700;
    }
 
 
