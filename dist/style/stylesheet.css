@@ -816,5 +816,9 @@
     text-align: center;
    }
 
+   .learning__section-course-navigation{
+    gap: 1rem;
+   }
+
 
  }
